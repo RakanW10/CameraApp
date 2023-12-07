@@ -11,6 +11,8 @@
 		685FE5BD2B21A7CD00AD9A79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685FE5BC2B21A7CD00AD9A79 /* ContentView.swift */; };
 		685FE5BF2B21A7CE00AD9A79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 685FE5BE2B21A7CE00AD9A79 /* Assets.xcassets */; };
 		685FE5C22B21A7CE00AD9A79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 685FE5C12B21A7CE00AD9A79 /* Preview Assets.xcassets */; };
+		685FE5C92B21B5C300AD9A79 /* AuthorizationChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685FE5C82B21B5C300AD9A79 /* AuthorizationChecker.swift */; };
+		685FE5CB2B21B8E400AD9A79 /* VideoContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685FE5CA2B21B8E400AD9A79 /* VideoContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		685FE5BC2B21A7CD00AD9A79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		685FE5BE2B21A7CE00AD9A79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		685FE5C12B21A7CE00AD9A79 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		685FE5C82B21B5C300AD9A79 /* AuthorizationChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationChecker.swift; sourceTree = "<group>"; };
+		685FE5CA2B21B8E400AD9A79 /* VideoContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		685FE5B92B21A7CD00AD9A79 /* CameraApp */ = {
 			isa = PBXGroup;
 			children = (
+				685FE5C82B21B5C300AD9A79 /* AuthorizationChecker.swift */,
 				685FE5BA2B21A7CD00AD9A79 /* CameraAppApp.swift */,
 				685FE5BC2B21A7CD00AD9A79 /* ContentView.swift */,
+				685FE5CA2B21B8E400AD9A79 /* VideoContentViewModel.swift */,
 				685FE5BE2B21A7CE00AD9A79 /* Assets.xcassets */,
 				685FE5C02B21A7CE00AD9A79 /* Preview Content */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				685FE5CB2B21B8E400AD9A79 /* VideoContentViewModel.swift in Sources */,
 				685FE5BD2B21A7CD00AD9A79 /* ContentView.swift in Sources */,
 				685FE5BB2B21A7CD00AD9A79 /* CameraAppApp.swift in Sources */,
+				685FE5C92B21B5C300AD9A79 /* AuthorizationChecker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +280,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CameraApp/Preview Content\"";
+				DEVELOPMENT_TEAM = HTV9CGSATH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs your camera access";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -300,8 +310,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CameraApp/Preview Content\"";
+				DEVELOPMENT_TEAM = HTV9CGSATH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs your camera access";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
